@@ -7,9 +7,8 @@ namespace Methods
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //  int sum = Sum();
-            // Console.WriteLine(Sum());
-            // Sum();
+            int result = Sum();
+            Console.WriteLine($"Sum result: {result}");
 
 
           //  int first = 7;
@@ -21,15 +20,14 @@ namespace Methods
             DisplayNumbers(10);
         }
 
-        static void Sum()
+        static int Sum()
         {
-            int a= 2;
-            int b= 3;
-
-
+            int a = 2;
+            int b = 3;
 
             int sum = a + b;
             Console.WriteLine(sum);
+            return sum;
         }
 
         static int Multiply(int a, int b)
